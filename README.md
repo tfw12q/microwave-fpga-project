@@ -6,13 +6,13 @@ This is a prototype that is used to apply principles of engineering to create th
 ONBOARD LEFT BUTTON: Using the left push-button on the FPGA, the timer can be set to 30 seconds. 
 ONBOARD LED: The LED’s on-board indicate the LSB values because some digits are displayed incorrectly on the 7 segment display but still works correctly.
 
-OVEN LIGHT: The green light on the breadboard indicates that the oven is on.
+OVEN LIGHT: An LED will indicate that the oven is on.
 
 TIMER: The timer bits are sent to a 7447 decoder to display the number on a 7 segment display.
 
 SERVO: During operation, there will be a servo motor used to simulate the oven tray that will swivel back and forth. The servo motor is controlled by using the on-board clock and will alternate the swiveling every second. It changes direction, CW to CCW, based on the logical level of the LSB in the counter. 
 
-MOTOR PWM: There will be a motor fan that will have power levels in increments of 10% that is set by using the dip switches on the FPGA board. The increments are selected by using BCD values, 0-9 that will speed up or slow down the fan. The fan is controlled by using pulse width modulation (PWM). 
+MOTOR PWM: There will be a motor fan that will have power levels in increments of 10% that is set by using the dip switches on the FPGA board. The increments are selected by using BCD values, 0-9 that will speed up or slow down the fan. The fan is controlled with pulse width modulation (PWM). 
 
 BUZZER: When the timer reaches zero, a Piezo buzzer will continue to beep until the oven is reset or disconnected.
 
